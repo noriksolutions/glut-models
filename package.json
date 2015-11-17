@@ -1,0 +1,26 @@
+{
+  "name": "glut-models",
+  "version": "1.0.0",
+  "description": "glut mongoose models for mongo",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Sebring",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebringj/glut-models.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "models"
+  ],
+  "bugs": {
+    "url": "https://github.com/sebringj/glut-models/issues"
+  },
+  "homepage": "https://github.com/sebringj/glut-models#readme",
+  "dependencies": {
+    "mongoose": "^4.2.5"
+  }
+}
