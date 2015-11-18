@@ -28,12 +28,17 @@ let formOfPayment = {
 
 let userSchema = mongoose.Schema({
   invitation: String,
+  primaryEmail: String,
   profiles: [profile],
   shippingAddresses: [address],
   billingAddresses: [address],
   roles: [String],
   formsOfPayment: [formOfPayment]
 });
+
+userSchema.methods.isAdmin = function() {
+  return (_.get(this, 'roles', []).indexOf('admin') > -1);
+};
 
 userSchema.plugin(basePlugin);
 
