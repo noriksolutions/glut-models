@@ -1,6 +1,9 @@
 'use strict';
 
+var mongoose = require('mongoose');
+
 module.exports = {
+	mongoose: mongoose,
 	models: {
 		User: require('./models/user'),
 		Product: require('./models/product'),

@@ -28,7 +28,7 @@ let productSchema = new mongoose.Schema({
 	msrp: { type: Number, default: 0 },
 	salePrice: { type: Number, default: 0 },
 	wholesale: { type: Number, default: 0 },
-	variants: mongoose.Schema.types.Mixed
+	variants: mongoose.Schema.Types.Mixed
 });
 
 productSchema.plugin(basePlugin);
@@ -39,4 +39,4 @@ productSchema.pre('save', function(next) {
 	next();
 });
 
-module.export = mongoose.model('Product', productSchema);
+module.exports = mongoose.model('Product', productSchema);

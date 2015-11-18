@@ -10,9 +10,9 @@ let basePlugin = require('../plugins/base');
 let variantSchema = new mongoose.Schema({
 	name: { type: String, unique: true },
 	type: String,
-	values: [mongoose.Schema.types.Mixed]
+	values: [mongoose.Schema.Types.Mixed]
 });
 
 variantSchema.plugin(basePlugin);
 
-module.export = mongoose.model('Variant', variantSchema);
+module.exports = mongoose.model('Variant', variantSchema);
