@@ -19,7 +19,9 @@ let profile = {
 };
 
 let formOfPayment = {
-  paymentId: { type: String, unique: true },
+  customerId: String,
+  paymentId: String,
+  gateway: String,
   paymentType: String,
   last4: String,
   expMonth: String,
