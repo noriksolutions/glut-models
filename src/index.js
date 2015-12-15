@@ -10,6 +10,6 @@ module.exports = {
     Product: require('./models/product'),
     Transaction: require('./models/transaction'),
     Variant: require('./models/variant'),
-    Invitation = require('./models/invitation')
+    Invitation: require('./models/invitation')
   }
 };
