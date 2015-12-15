@@ -8,6 +8,8 @@ module.exports = function(schema, options) {
 
   schema.pre('save', function (next) {
     this.modified = new Date();
+    if (!this.created)
+      this.created = new Date();
     next();
   });
 }
